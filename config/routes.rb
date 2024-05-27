@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :home, :work_career, :skill
+
+  resources :home, :work_career, :skill, :product
   root to: "home#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

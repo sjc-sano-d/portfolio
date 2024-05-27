@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+  <div class="container">
+    <nav>
+     <ul class="nav navbar-nav navbar-right">
+       <li><%= link_to "ホーム",   '/' %></li>
+       <li><%= link_to "業務経歴",   '/work_career' %></li>
+       <li><%= link_to "スキル", '/skill' %></li>
+       <li><%= link_to "成果物", '/product' %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
